@@ -49,5 +49,28 @@ const user = {
 console.log(user.id);
 const buggatti = {
     model: "veyron",
-    year: "2020"
+    year: "2020",
+    numOfSeats: 5
 };
+// Type Assertion
+let cid = 2;
+// let customerId = <number>cid
+let customerId = cid;
+console.log(customerId);
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+function log(message) {
+    console.log(message);
+}
+const subaru = {
+    model: "imprezza",
+    year: 1998
+};
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArr = getArray([1, 2, 3, 4]);
+let strArr = getArray(["sam", "brian", "paul"]);
